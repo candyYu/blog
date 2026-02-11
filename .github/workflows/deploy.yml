@@ -10,6 +10,9 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    # 必须有写权限，才能把 _site 推到 gh-pages 分支
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
