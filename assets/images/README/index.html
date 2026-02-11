@@ -1,0 +1,20 @@
+<h1>博客配图目录</h1>
+<p>把文章里用到的截图、配图放在这里（可建子文件夹按文章分类）。</p>
+<p>构建后会出现在站点根目录的 <code>/assets/images/</code> 下。</p>
+<h2>在文章里怎么引用</h2>
+<p>在 Markdown 里用<strong>站根路径</strong>写图片地址，例如：</p>
+<pre><code class="language-markdown">![截图说明](/assets/images/某篇文章/截图.png)
+</code></pre>
+<ul>
+<li>路径必须以 <code>/assets/images/</code> 开头（对应本目录）。</li>
+<li>支持子文件夹，例如：<code>/assets/images/vibe-coding学习任务一/snake.png</code>。</li>
+</ul>
+<h2>建议结构示例</h2>
+<pre><code>src/assets/images/
+  vibe-coding学习任务一/
+    screenshot1.png
+    snake-game.png
+  design-system/
+    ...
+</code></pre>
+<p>这样每篇文章的图集中在一个子文件夹里，方便管理。</p>
